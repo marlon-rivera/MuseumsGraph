@@ -1,4 +1,74 @@
+body{
+    background-image: url('./resources/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #tunjaMap{
-    height: 600px;
+    height: 480px;
     width: 800px;
+    border-radius: 10px;
+}
+.content{
+    position: relative;
+    top: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.options{
+    background-color: rgba(255, 255, 255, .3);
+    width: 290px;
+    height: 480px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    overflow: auto;
+}
+.museum{
+    background-color: rgba(3, 4, 67, 0.8);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 92%;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.museumVisited:hover{
+    transform: scale(1.3) perspective(1px);
+}
+.custom-icon {
+    text-align: center;
+}
+
+.icon-image {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-label {
+    background-color: #fff;
+    padding: 4px;
+    font-weight: bold;
+    width: fit-content;
+    font-size: 7px;
+}
+.visited{
+    background-color: gray;
+}
+.walk, .drive{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 5px;
+    cursor: pointer;
 }

@@ -11,13 +11,19 @@
     crossorigin=""/>
 </head>
 <body>
-    
-    <div id="tunjaMap"></div>
-
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
- integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
- crossorigin=""></script>
- <script src="index.js"></script>
+    <div class="content">
+        <div>
+            <div class="walk" onclick="changeMode(event)" ><img  id="img-walk" width="30" src="./resources/walk-dark.png" alt=""></div>
+            <div class="drive" onclick="changeMode(event)"><img id="img-drive" width="30" src="./resources/car-ligth.png" alt=""></div>
+        </div>
+        <div id="tunjaMap"></div>
+        <div id="options" class="options">
+            
+        </div>
+    </div>
 </body>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="index.js"></script>
 </html>
